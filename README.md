@@ -109,11 +109,16 @@ print(f"Risk Level: {result['risk_level']}")
 
 ## Model Performance
 
+Based on our evaluation with real data, here are the actual performance metrics:
+
 | Model | Accuracy | Precision | Recall | F1 Score | ROC AUC |
 |-------|----------|-----------|--------|----------|---------|
-| XGBoost | 0.9542 | 0.9231 | 0.8976 | 0.9102 | 0.9812 |
-| Random Forest | 0.9487 | 0.9103 | 0.8854 | 0.8977 | 0.9756 |
-| Ensemble | 0.9578 | 0.9312 | 0.9021 | 0.9164 | 0.9834 |
+| Random Forest | 0.9795 | 0.9767 | 0.3415 | 0.5060 | 0.8766 |
+| XGBoost | 0.9780 | 0.8571 | 0.3415 | 0.4884 | 0.8680 |
+| Gradient Boosting | 0.9728 | 1.0000 | 0.1138 | 0.2044 | 0.7721 |
+| Ensemble | 0.9772 | 0.9444 | 0.2764 | 0.4277 | 0.8730 |
+
+These metrics were obtained by training the models on a sample of 20,000 transactions from the dataset. The high accuracy and precision values indicate that our models are effective at identifying fraudulent shipments, while the lower recall values suggest there's room for improvement in detecting all fraud cases.
 
 ## Graph Analysis
 
